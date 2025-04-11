@@ -19,10 +19,10 @@
         },
         {
             "atomType": "Molecule",
-            "name": "Sign",
-            "x": 0.1371326803205699,
-            "y": 0.23429951690821257,
-            "uniqueID": 1744353832336,
+            "name": "Pipe",
+            "x": 0.1558325912733749,
+            "y": 0.2753623188405797,
+            "uniqueID": 1744353142973,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
@@ -32,7 +32,7 @@
                     "name": "Output",
                     "x": 0.98,
                     "y": 0.5,
-                    "uniqueID": 1744353831599,
+                    "uniqueID": 1744353143496,
                     "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 }
@@ -40,6 +40,17 @@
             "allConnectors": [],
             "fileTypeVersion": 1,
             "compiledBom": {}
+        },
+        {
+            "atomType": "Text",
+            "name": "Text",
+            "x": 0.28495102404274264,
+            "y": 0.24396135265700483,
+            "uniqueID": 1744354315972,
+            "ioValues": [],
+            "description": "Creates a new text sketch.",
+            "fontFamily": "ANTON",
+            "selectedFontIndex": 0
         }
     ],
     "allConnectors": [],
