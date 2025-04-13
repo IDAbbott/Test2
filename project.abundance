@@ -14,12 +14,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1744353133213,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1744560267242
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -111,17 +106,44 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
-        }
-    ],
-    "allConnectors": [
+        },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 1744560267242,
-            "ap2ID": 1744353133213
+            "atomType": "Molecule",
+            "name": "Text 1",
+            "x": 0.08915094339622642,
+            "y": 0.6282306163021869,
+            "uniqueID": 1744561444187,
+            "ioValues": [],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1744561443808,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Text",
+                    "name": "Text",
+                    "x": 0.11792452830188678,
+                    "y": 0.40159045725646125,
+                    "uniqueID": 1744561494084,
+                    "ioValues": [],
+                    "description": "Creates a new text sketch.",
+                    "fontFamily": "ANONYMOUSPRO",
+                    "selectedFontIndex": 3
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
+    "allConnectors": [],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
