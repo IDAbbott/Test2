@@ -20,8 +20,8 @@
         {
             "atomType": "Molecule",
             "name": "Base",
-            "x": 0.12311320754716983,
-            "y": 0.19880715705765406,
+            "x": 0.11462264150943396,
+            "y": 0.21073558648111332,
             "uniqueID": 1744560267242,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -33,7 +33,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1744560267292,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1744560539261
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -102,6 +107,13 @@
                     "ap2Primary": true,
                     "ap1ID": 1744560457865,
                     "ap2ID": 1744560539261
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1744560539261,
+                    "ap2ID": 1744560267292
                 }
             ],
             "fileTypeVersion": 1,
@@ -113,7 +125,12 @@
             "x": 0.08915094339622642,
             "y": 0.6282306163021869,
             "uniqueID": 1744561444187,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Label",
+                    "ioValue": 10
+                }
+            ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
@@ -123,7 +140,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1744561443808,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1744561870165
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -132,18 +154,139 @@
                     "x": 0.11792452830188678,
                     "y": 0.40159045725646125,
                     "uniqueID": 1744561494084,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "Text",
+                            "ioValue": 10
+                        }
+                    ],
                     "description": "Creates a new text sketch.",
                     "fontFamily": "ANONYMOUSPRO",
                     "selectedFontIndex": 3
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Label",
+                    "x": 0.04,
+                    "y": 0.6858846918489065,
+                    "uniqueID": 1744561727521,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "string"
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.26037735849056604,
+                    "y": 0.3876739562624254,
+                    "uniqueID": 1744561870165,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1744561494084
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1744561494084,
+                    "ap2ID": 1744561870165
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Text",
+                    "ap2Primary": false,
+                    "ap1ID": 1744561727521,
+                    "ap2ID": 1744561494084
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1744561870165,
+                    "ap2ID": 1744561443808
+                }
+            ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.2632075471698113,
+            "y": 0.42147117296222664,
+            "uniqueID": 1744561912587,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1744560267242
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": 1744561959926
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.21556603773584906,
+            "y": 0.6739562624254474,
+            "uniqueID": 1744561959926,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744561444187
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1744560267242,
+            "ap2ID": 1744561912587
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744561444187,
+            "ap2ID": 1744561959926
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1744561959926,
+            "ap2ID": 1744561912587
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
