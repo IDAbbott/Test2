@@ -42,21 +42,6 @@
             "compiledBom": {}
         },
         {
-            "atomType": "Text",
-            "name": "Text",
-            "x": 0.1891509433962264,
-            "y": 0.21669980119284293,
-            "uniqueID": 1744354820509,
-            "ioValues": [
-                {
-                    "name": "Text"
-                }
-            ],
-            "description": "Creates a new text sketch.",
-            "fontFamily": "ANTON",
-            "selectedFontIndex": 0
-        },
-        {
             "atomType": "Color",
             "name": "Color",
             "x": 0.30235849056603775,
@@ -65,17 +50,17 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1744354820509
+                    "ioValue": 1744355257786
                 }
             ],
             "description": "Changes the color of the shape.",
-            "selectedColorIndex": 22
+            "selectedColorIndex": 20
         },
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.19858490566037737,
-            "y": 0.6560636182902585,
+            "x": 0.19669811320754715,
+            "y": 0.23260437375745527,
             "uniqueID": 1744355257786,
             "ioValues": [
                 {
@@ -92,13 +77,13 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.2811320754716981,
-            "y": 0.5208747514910537,
+            "x": 0.3570754716981132,
+            "y": 0.46123260437375746,
             "uniqueID": 1744355449045,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": 1744355047872
                 },
                 {
                     "name": "height",
@@ -106,21 +91,31 @@
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.30235849056603775,
+            "y": 0.1451292246520875,
+            "uniqueID": 1744558597755,
+            "ioValues": [],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 0
         }
     ],
     "allConnectors": [
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "Text",
-            "ap2Primary": false,
-            "ap1ID": 1744353142973,
-            "ap2ID": 1744354820509
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1744355047872,
+            "ap2ID": 1744355449045
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 1744354820509,
+            "ap1ID": 1744355257786,
             "ap2ID": 1744355047872
         }
     ],
