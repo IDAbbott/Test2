@@ -14,12 +14,17 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1744353133213,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1744560267242
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Molecule",
-            "name": "Sign",
+            "name": "Base",
             "x": 0.12311320754716983,
             "y": 0.19880715705765406,
             "uniqueID": 1744560267242,
@@ -33,12 +38,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1744560267292,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": 1744560539261
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -91,106 +91,6 @@
                     ],
                     "description": "Changes the color of the shape.",
                     "selectedColorIndex": 10
-                },
-                {
-                    "atomType": "Molecule",
-                    "name": "Text",
-                    "x": 0.07075471698113207,
-                    "y": 0.6341948310139165,
-                    "uniqueID": 1744560613539,
-                    "ioValues": [
-                        {
-                            "name": "name1",
-                            "ioValue": 10
-                        }
-                    ],
-                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-                    "topLevel": false,
-                    "allAtoms": [
-                        {
-                            "atomType": "Output",
-                            "name": "Output",
-                            "x": 0.98,
-                            "y": 0.5,
-                            "uniqueID": 1744560613608,
-                            "ioValues": [
-                                {
-                                    "name": "number or geometry",
-                                    "ioValue": 1744560780184
-                                }
-                            ],
-                            "description": "Connect geometry here to make it available in the next level up. "
-                        },
-                        {
-                            "atomType": "Text",
-                            "name": "Text",
-                            "x": 0.11226415094339622,
-                            "y": 0.3399602385685885,
-                            "uniqueID": 1744560679529,
-                            "ioValues": [
-                                {
-                                    "name": "Text",
-                                    "ioValue": 10
-                                }
-                            ],
-                            "description": "Creates a new text sketch.",
-                            "fontFamily": "NOTOSANS",
-                            "selectedFontIndex": 2
-                        },
-                        {
-                            "atomType": "Extrude",
-                            "name": "Extrude",
-                            "x": 0.2169811320754717,
-                            "y": 0.31809145129224653,
-                            "uniqueID": 1744560780184,
-                            "ioValues": [
-                                {
-                                    "name": "geometry",
-                                    "ioValue": 1744560679529
-                                },
-                                {
-                                    "name": "height",
-                                    "ioValue": 10
-                                }
-                            ],
-                            "description": "Extrudes a 2D shape. Input can be negitive. "
-                        },
-                        {
-                            "atomType": "Input",
-                            "name": "name1",
-                            "x": 0.04,
-                            "y": 0.6819085487077535,
-                            "uniqueID": 1744560879658,
-                            "ioValues": [],
-                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-                            "type": "string"
-                        }
-                    ],
-                    "allConnectors": [
-                        {
-                            "ap1Name": "geometry",
-                            "ap2Name": "geometry",
-                            "ap2Primary": true,
-                            "ap1ID": 1744560679529,
-                            "ap2ID": 1744560780184
-                        },
-                        {
-                            "ap1Name": "geometry",
-                            "ap2Name": "number or geometry",
-                            "ap2Primary": false,
-                            "ap1ID": 1744560780184,
-                            "ap2ID": 1744560613608
-                        },
-                        {
-                            "ap1Name": "number or geometry",
-                            "ap2Name": "Text",
-                            "ap2Primary": false,
-                            "ap1ID": 1744560879658,
-                            "ap2ID": 1744560679529
-                        }
-                    ],
-                    "fileTypeVersion": 1,
-                    "compiledBom": {}
                 }
             ],
             "allConnectors": [
@@ -207,20 +107,21 @@
                     "ap2Primary": true,
                     "ap1ID": 1744560457865,
                     "ap2ID": 1744560539261
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 1744560539261,
-                    "ap2ID": 1744560267292
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1744560267242,
+            "ap2ID": 1744353133213
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
