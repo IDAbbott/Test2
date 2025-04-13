@@ -14,7 +14,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1744353133213,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1744561912587
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -122,8 +127,8 @@
         {
             "atomType": "Molecule",
             "name": "Text 1",
-            "x": 0.08915094339622642,
-            "y": 0.6282306163021869,
+            "x": 0.09386792452830188,
+            "y": 0.6580516898608351,
             "uniqueID": 1744561444187,
             "ioValues": [
                 {
@@ -151,8 +156,8 @@
                 {
                     "atomType": "Text",
                     "name": "Text",
-                    "x": 0.11792452830188678,
-                    "y": 0.40159045725646125,
+                    "x": 0.2,
+                    "y": 0.6282306163021869,
                     "uniqueID": 1744561494084,
                     "ioValues": [
                         {
@@ -161,8 +166,8 @@
                         }
                     ],
                     "description": "Creates a new text sketch.",
-                    "fontFamily": "ANONYMOUSPRO",
-                    "selectedFontIndex": 3
+                    "fontFamily": "ANTON",
+                    "selectedFontIndex": 0
                 },
                 {
                     "atomType": "Input",
@@ -177,8 +182,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.26037735849056604,
-                    "y": 0.3876739562624254,
+                    "x": 0.3627358490566038,
+                    "y": 0.6540755467196819,
                     "uniqueID": 1744561870165,
                     "ioValues": [
                         {
@@ -222,8 +227,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.2632075471698113,
-            "y": 0.42147117296222664,
+            "x": 0.46367924528301885,
+            "y": 0.3797216699801193,
             "uniqueID": 1744561912587,
             "ioValues": [
                 {
@@ -231,8 +236,8 @@
                     "ioValue": 1744560267242
                 },
                 {
-                    "name": "Shape 3",
-                    "ioValue": 1744561959926
+                    "name": "Shape 4",
+                    "ioValue": 1744562122938
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -250,18 +255,63 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": -30
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": -3
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 5
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.33349056603773586,
+            "y": 0.7395626242544732,
+            "uniqueID": 1744562122938,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744561959926
+                }
+            ],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 22
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.5429245283018868,
+            "y": 0.6401590457256462,
+            "uniqueID": 1744562338209,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1744561912587
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Test2"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STL"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": "STL",
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "Test2"
         }
     ],
     "allConnectors": [
@@ -281,9 +331,30 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 3",
+            "ap2Name": "number or geometry",
             "ap2Primary": false,
+            "ap1ID": 1744561912587,
+            "ap2ID": 1744353133213
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1744561912587,
+            "ap2ID": 1744562338209
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": 1744561959926,
+            "ap2ID": 1744562122938
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 4",
+            "ap2Primary": false,
+            "ap1ID": 1744562122938,
             "ap2ID": 1744561912587
         }
     ],
