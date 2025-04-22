@@ -14,7 +14,12 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1744353133213,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1745287318031
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -387,7 +392,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1745286349609,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1745287196706
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -461,8 +471,8 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.3702171664943123,
-                    "y": 0.832579185520362,
+                    "x": 0.3629782833505688,
+                    "y": 0.8099547511312216,
                     "uniqueID": 1745286673910,
                     "ioValues": [
                         {
@@ -471,7 +481,7 @@
                         }
                     ],
                     "description": "Changes the color of the shape.",
-                    "selectedColorIndex": 20
+                    "selectedColorIndex": 1
                 },
                 {
                     "atomType": "Color",
@@ -491,17 +501,17 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.10444674250258532,
-                    "y": 0.5497737556561086,
+                    "x": 0.10548086866597725,
+                    "y": 0.5429864253393666,
                     "uniqueID": 1745286788150,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 30
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 30
                         }
                     ],
                     "description": "Creates a new rectangle."
@@ -509,8 +519,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2233712512926577,
-                    "y": 0.5226244343891403,
+                    "x": 0.2171664943123061,
+                    "y": 0.5135746606334841,
                     "uniqueID": 1745286798062,
                     "ioValues": [
                         {
@@ -519,7 +529,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 0
+                            "ioValue": -15
                         },
                         {
                             "name": "yDist",
@@ -527,7 +537,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": -1
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -545,7 +555,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 30
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -578,7 +588,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 0
+                            "ioValue": -2.5
                         },
                         {
                             "name": "yDist",
@@ -590,6 +600,52 @@
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Color",
+                    "name": "Color",
+                    "x": 0.36918304033092036,
+                    "y": 0.8167420814479638,
+                    "uniqueID": 1745286963993,
+                    "ioValues": [],
+                    "description": "Changes the color of the shape.",
+                    "selectedColorIndex": 0
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.5191313340227508,
+                    "y": 0.3891402714932127,
+                    "uniqueID": 1745287068940,
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1745286718625
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": 1745286811526
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.6297828335056878,
+                    "y": 0.4977375565610859,
+                    "uniqueID": 1745287196706,
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1745287068940
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": 1745286673910
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
                 }
             ],
             "allConnectors": [
@@ -623,6 +679,20 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 1745286673910,
+                    "ap2ID": 1745287196706
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1745286718625,
+                    "ap2ID": 1745287068940
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1745286788150,
@@ -644,17 +714,115 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 1745286811526,
+                    "ap2ID": 1745287068940
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1745286890620,
                     "ap2ID": 1745286623653
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1745287068940,
+                    "ap2ID": 1745287196706
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1745287196706,
+                    "ap2ID": 1745286349609
                 }
             ],
             "fileTypeVersion": 1,
             "compiledBom": {}
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.2843846949327818,
+            "y": 0.4411764705882353,
+            "uniqueID": 1745287318031,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1745286348968
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1745284996576
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.4012409513960703,
+            "y": 0.6312217194570136,
+            "uniqueID": 1745287384904,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1745287318031
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Test2"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "SVG"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": null,
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "Test2"
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1745284996576,
+            "ap2ID": 1745287318031
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1745286348968,
+            "ap2ID": 1745287318031
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1745287318031,
+            "ap2ID": 1744353133213
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1745287318031,
+            "ap2ID": 1745287384904
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
