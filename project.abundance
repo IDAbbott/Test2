@@ -563,8 +563,8 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.4405377456049638,
-                    "y": 0.5542986425339366,
+                    "x": 0.3943396226415094,
+                    "y": 0.5387673956262425,
                     "uniqueID": 1745286811526,
                     "ioValues": [
                         {
@@ -650,13 +650,13 @@
                 {
                     "atomType": "RegularPolygon",
                     "name": "RegularPolygon",
-                    "x": 0.234746639089969,
-                    "y": 0.15610859728506787,
+                    "x": 0.10548086866597725,
+                    "y": 0.13122171945701358,
                     "uniqueID": 1745288058735,
                     "ioValues": [
                         {
                             "name": "number of sides",
-                            "ioValue": 31
+                            "ioValue": 6
                         },
                         {
                             "name": "diameter",
@@ -668,8 +668,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.38883143743536713,
-                    "y": 0.16063348416289594,
+                    "x": 0.38572905894519127,
+                    "y": 0.1515837104072398,
                     "uniqueID": 1745288147933,
                     "ioValues": [
                         {
@@ -686,8 +686,8 @@
                 {
                     "atomType": "Code",
                     "name": "Code",
-                    "x": 0.5,
-                    "y": 0.5,
+                    "x": 0.5287735849056604,
+                    "y": 0.8866799204771372,
                     "uniqueID": 1745307150520,
                     "ioValues": [
                         {
@@ -708,23 +708,23 @@
                     "code": " \n      //Inputs:[inputShape, dist, height]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Takes the address and gets the shape from the library\n      let importedShape = library[inputShape]\n      \n      //This makes a new copy of of the shape (to prevent garbage collection issues),\n      //and moves it in the X direction. Note that this will not work if the input is an assembly\n      let movedShape = importedShape.geometry[0].clone().translate([dist,0,0])\n      \n      //Console.log works for debugging to better see what is happening under the hood\n      console.log(\"Shape:\")\n      console.log(importedShape);\n      \n      //Shapes stored in the library have tags, a color, a plane, and a bill of materials like this. We don't modify them here\n      let shape1 = {\n        geometry: [movedShape],\n        tags: importedShape.tags,\n        color: importedShape.color,\n        plane: importedShape.plane,\n        bom: importedShape.bom\n      }\n      \n      //We could at this point return shape1 as a complete shape and it will be automatically written to the library for us\n      //return shape1\n      \n      //We can also create a new shape from scratch\n      let createdRectangle = replicad.drawRectangle(5,7)\n      //This is the plane we are going to put our new shape on\n      const newPlane = new Plane().pivot(0, 'Y');\n      //And we extrude the shape to make it 3D\n      let createdShape = createdRectangle.sketchOnPlane(newPlane).extrude(height)\n      \n      //For our new geometry we need to define the tags, color, plane, etc\n      let shape2 = {\n          geometry: [createdShape], \n          tags: [\"aTag\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      \n      //Then we can return our created shape in just the same way\n      //return shape2\n      \n      //If we want to return both shapes at once, we can create an assembly with them\n      let anAssembly = {\n        geometry: [shape1, shape2], \n        tags: [\"aNewTag\"],\n        color: '#A3CF5B',\n        plane: newPlane,\n        bom: []\n      }\n      \n      //And we can return that in the same way\n      return anAssembly\n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
                 },
                 {
-                    "atomType": "Equation",
-                    "name": "2x + y",
-                    "x": 0.057911065149948295,
-                    "y": 0.14027149321266968,
-                    "uniqueID": 1745307167970,
+                    "atomType": "Loft",
+                    "name": "Loft",
+                    "x": 0.4990566037735849,
+                    "y": 0.28628230616302186,
+                    "uniqueID": 1745307467115,
                     "ioValues": [
                         {
-                            "name": "x",
-                            "ioValue": 1
+                            "name": "Shape 1",
+                            "ioValue": ""
                         },
                         {
-                            "name": "y",
-                            "ioValue": 10
+                            "name": "Shape 1",
+                            "ioValue": ""
                         }
                     ],
-                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "2x + y"
+                    "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
+                    "closedSelection": 0
                 }
             ],
             "allConnectors": [
@@ -825,13 +825,6 @@
                     "ap2Primary": true,
                     "ap1ID": 1745288058735,
                     "ap2ID": 1745288147933
-                },
-                {
-                    "ap1Name": "result",
-                    "ap2Name": "number of sides",
-                    "ap2Primary": false,
-                    "ap1ID": 1745307167970,
-                    "ap2ID": 1745288058735
                 }
             ],
             "fileTypeVersion": 1,
