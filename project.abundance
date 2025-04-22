@@ -897,6 +897,10 @@
                         },
                         {
                             "name": "Shape 3",
+                            "ioValue": 1745360488066
+                        },
+                        {
+                            "name": "Shape 4",
                             "ioValue": ""
                         },
                         {
@@ -905,6 +909,10 @@
                         },
                         {
                             "name": "Shape 3",
+                            "ioValue": 1745360488066
+                        },
+                        {
+                            "name": "Shape 4",
                             "ioValue": ""
                         }
                     ],
@@ -920,7 +928,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": ""
+                            "ioValue": 1745360372396
                         },
                         {
                             "name": "xDist",
@@ -932,7 +940,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 20
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -941,9 +949,23 @@
             "allConnectors": [
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1745360372396,
+                    "ap2ID": 1745360488066
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "Shape 1",
                     "ap2Primary": false,
                     "ap1ID": 1745360379193,
+                    "ap2ID": 1745360408101
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 3",
+                    "ap2Primary": false,
+                    "ap1ID": 1745360488066,
                     "ap2ID": 1745360408101
                 }
             ],
