@@ -656,7 +656,7 @@
                     "ioValues": [
                         {
                             "name": "number of sides",
-                            "ioValue": 180
+                            "ioValue": 3
                         },
                         {
                             "name": "diameter",
@@ -674,7 +674,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": ""
+                            "ioValue": 1745288058735
                         },
                         {
                             "name": "height",
@@ -775,6 +775,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1745287196706,
                     "ap2ID": 1745286349609
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1745288058735,
+                    "ap2ID": 1745288147933
                 }
             ],
             "fileTypeVersion": 1,
