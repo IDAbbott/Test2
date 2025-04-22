@@ -403,8 +403,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.10754912099276111,
-                    "y": 0.31900452488687786,
+                    "x": 0.1018867924528302,
+                    "y": 0.43339960238568587,
                     "uniqueID": 1745286399531,
                     "ioValues": [
                         {
@@ -417,8 +417,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.2481902792140641,
-                    "y": 0.3235294117647059,
+                    "x": 0.205188679245283,
+                    "y": 0.463220675944334,
                     "uniqueID": 1745286414251,
                     "ioValues": [
                         {
@@ -435,8 +435,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.10341261633919338,
-                    "y": 0.823529411764706,
+                    "x": 0.1061320754716981,
+                    "y": 0.8986083499005965,
                     "uniqueID": 1745286584581,
                     "ioValues": [
                         {
@@ -453,8 +453,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.265770423991727,
-                    "y": 0.82579185520362,
+                    "x": 0.25943396226415094,
+                    "y": 0.9025844930417495,
                     "uniqueID": 1745286623653,
                     "ioValues": [
                         {
@@ -471,8 +471,8 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.3629782833505688,
-                    "y": 0.8099547511312216,
+                    "x": 0.3613207547169811,
+                    "y": 0.8906560636182902,
                     "uniqueID": 1745286673910,
                     "ioValues": [
                         {
@@ -486,8 +486,8 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.3422957600827301,
-                    "y": 0.32805429864253394,
+                    "x": 0.3150943396226415,
+                    "y": 0.437375745526839,
                     "uniqueID": 1745286718625,
                     "ioValues": [
                         {
@@ -501,8 +501,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.10548086866597725,
-                    "y": 0.5429864253393666,
+                    "x": 0.10283018867924529,
+                    "y": 0.6858846918489065,
                     "uniqueID": 1745286788150,
                     "ioValues": [
                         {
@@ -519,8 +519,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2171664943123061,
-                    "y": 0.5135746606334841,
+                    "x": 0.2122641509433962,
+                    "y": 0.6819085487077535,
                     "uniqueID": 1745286798062,
                     "ioValues": [
                         {
@@ -545,8 +545,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.32574974146845914,
-                    "y": 0.5384615384615384,
+                    "x": 0.31745283018867926,
+                    "y": 0.6600397614314115,
                     "uniqueID": 1745286803851,
                     "ioValues": [
                         {
@@ -563,8 +563,8 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.3943396226415094,
-                    "y": 0.5387673956262425,
+                    "x": 0.39669811320754716,
+                    "y": 0.6361829025844931,
                     "uniqueID": 1745286811526,
                     "ioValues": [
                         {
@@ -578,8 +578,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.1861427094105481,
-                    "y": 0.8303167420814479,
+                    "x": 0.18537735849056605,
+                    "y": 0.8986083499005965,
                     "uniqueID": 1745286890620,
                     "ioValues": [
                         {
@@ -604,8 +604,8 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.36918304033092036,
-                    "y": 0.8167420814479638,
+                    "x": 0.5466981132075471,
+                    "y": 0.1451292246520875,
                     "uniqueID": 1745286963993,
                     "ioValues": [],
                     "description": "Changes the color of the shape.",
@@ -650,8 +650,8 @@
                 {
                     "atomType": "Loft",
                     "name": "Loft",
-                    "x": 0.4990566037735849,
-                    "y": 0.28628230616302186,
+                    "x": 0.4537735849056604,
+                    "y": 0.1848906560636183,
                     "uniqueID": 1745307467115,
                     "ioValues": [
                         {
@@ -665,6 +665,60 @@
                     ],
                     "description": "Joins two or more shapes into a single solid by filling in the space between them. Also called 'hull'",
                     "closedSelection": 0
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.11320754716981131,
+                    "y": 0.11928429423459246,
+                    "uniqueID": 1745363133229,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.1391509433962264,
+                    "y": 0.25646123260437376,
+                    "uniqueID": 1745363180270,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new circle."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.23679245283018868,
+                    "y": 0.17296222664015903,
+                    "uniqueID": 1745363212665,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
                 }
             ],
             "allConnectors": [
