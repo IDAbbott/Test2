@@ -395,7 +395,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": 1745287196706
+                            "ioValue": 1745287068940
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
@@ -623,29 +623,15 @@
                             "ioValue": 1745286718625
                         },
                         {
-                            "name": "Shape 2",
+                            "name": "Shape 3",
+                            "ioValue": 1745307467115
+                        },
+                        {
+                            "name": "Shape 4",
                             "ioValue": 1745286811526
                         },
                         {
-                            "name": "Shape 3",
-                            "ioValue": 1745307467115
-                        }
-                    ],
-                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-                },
-                {
-                    "atomType": "Assembly",
-                    "name": "Assembly",
-                    "x": 0.6297828335056878,
-                    "y": 0.4977375565610859,
-                    "uniqueID": 1745287196706,
-                    "ioValues": [
-                        {
-                            "name": "Shape 1",
-                            "ioValue": 1745287068940
-                        },
-                        {
-                            "name": "Shape 2",
+                            "name": "Shape 5",
                             "ioValue": 1745286673910
                         }
                     ],
@@ -798,10 +784,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 2",
+                    "ap2Name": "Shape 5",
                     "ap2Primary": false,
                     "ap1ID": 1745286673910,
-                    "ap2ID": 1745287196706
+                    "ap2ID": 1745287068940
                 },
                 {
                     "ap1Name": "geometry",
@@ -833,7 +819,7 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 2",
+                    "ap2Name": "Shape 4",
                     "ap2Primary": false,
                     "ap1ID": 1745286811526,
                     "ap2ID": 1745287068940
@@ -847,16 +833,9 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 1",
-                    "ap2Primary": false,
-                    "ap1ID": 1745287068940,
-                    "ap2ID": 1745287196706
-                },
-                {
-                    "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
                     "ap2Primary": false,
-                    "ap1ID": 1745287196706,
+                    "ap1ID": 1745287068940,
                     "ap2ID": 1745286349609
                 },
                 {
